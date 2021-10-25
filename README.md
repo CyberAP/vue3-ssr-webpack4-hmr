@@ -13,7 +13,7 @@
 
 ## Commands
 
-- `dev`: SSR in hot module reload mode, updates as you edit!
+- `start`: SSR in hot module reload mode, updates as you edit!
 - `serve`: SSR in production mode with all the builds compiled
 
 ## Folder structure

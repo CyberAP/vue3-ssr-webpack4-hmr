@@ -2,7 +2,7 @@
   "name": "vue3-webpack4-ssr-hmr",
   "version": "1.0.0",
   "scripts": {
-    "dev": "NODE_ENV=development node server/ssr-dev.js",
+    "start": "NODE_ENV=development node server/ssr-dev.js",
     "serve": "npm run build:server:prod && npm run build:client:prod && npm run server",
     "build:client:prod": "node_modules/.bin/webpack --config=webpack/webpack.config.client.prod.js",
     "build:server:prod": "node_modules/.bin/webpack --config=webpack/webpack.config.ssr.prod.js",
