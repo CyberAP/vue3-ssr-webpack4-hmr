@@ -9,9 +9,9 @@
 
 ### Integrations
 
-- `vue-router`
-- `vue-meta`
-- `vue-query`
+- [`vue-router`](https://next.router.vuejs.org/)
+- [`vue-meta`](https://github.com/nuxt/vue-meta/tree/next)
+- [`vue-query`](https://vue-query.vercel.app/)
 
 ## Commands
 
