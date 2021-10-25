@@ -1,0 +1,14 @@
+<html {{{ meta.htmlAttrs }}}>
+  <head {{{ meta.headAttrs }}}>
+    {{{ meta.head }}}
+    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+    {{{ head }}}
+  </head>
+  <body {{{ meta.bodyAttrs }}}>
+    <div id="app">{{{ appHtml }}}</div>
+    <script type="application/json" data-query-state>
+      {{{ queryState }}}
+    </script>
+    {{{ meta.body }}} {{{ body }}}
+  </body>
+</html>
