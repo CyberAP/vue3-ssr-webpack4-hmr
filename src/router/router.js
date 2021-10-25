@@ -8,5 +8,9 @@ export const createAppRouter = ({ history }) => {
   return createRouter({
     history,
     routes,
+    scrollBehavior(to, from, savedPosition) {
+      if (to.fullPath === from.fullPath) return false;
+      return savedPosition || { x: 0, y: 0 };
+    },
   });
 };
