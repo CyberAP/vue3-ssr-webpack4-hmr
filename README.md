@@ -23,6 +23,7 @@
 - `dist`: compiled assets split by compilation target (`client`, `server`). `dist/client` is served by express by default.
 - `public`: static assets. Served by express by default.
 - `server`: all the server-side code. Please not that code from `src` should never point to this folder.
+- `src`: your project's code
 - `webpack`: place to store all the webpack configs. The configs are split by target and environment with a base config as a common ancestor.
 
 ## TODO
