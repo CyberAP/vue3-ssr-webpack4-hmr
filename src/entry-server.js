@@ -27,7 +27,8 @@ export const render = async ({ url }) => {
   app.provide(VUE_QUERY_CLIENT, client);
 
   await router.push(url);
-
+  await router.isReady();
+  
   const sharedContext = {};
   const html = await renderToString(app, sharedContext);
   await renderMetaToString(app, sharedContext);
