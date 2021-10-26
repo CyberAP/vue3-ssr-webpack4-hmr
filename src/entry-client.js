@@ -1,4 +1,4 @@
-import { createApp } from "vue";
+import { createSSRApp } from "vue";
 import { createMetaManager, plugin as metaPlugin } from "vue-meta";
 import { createWebHistory } from "vue-router";
 import { createAppRouter } from "./router/router.js";
@@ -6,7 +6,7 @@ import { QueryClient, hydrate, VUE_QUERY_CLIENT } from "vue-query";
 import App from "./App.vue";
 
 const start = async () => {
-  const app = createApp(App);
+  const app = createSSRApp(App);
 
   const router = createAppRouter({ history: createWebHistory() });
   app.use(router);
